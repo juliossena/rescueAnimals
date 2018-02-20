@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">rescueAnimals</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_teste">testeActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_main_login">MainLoginActivity</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="title_activity_maps_google">Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_proof">ProofActivity</string>
+    <string name="title_activity_send_text">SendTextActivity</string>
+    <string name="title_activity_send_file">SendFileActivity</string>
+    <string name="title_activity_send_photo">SendPhotoActivity</string>
+    <string name="title_activity_send_audio">SendAudioActivity</string>
+</resources>

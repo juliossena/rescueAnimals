@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-net-3.6/commons-net-3.6.iml" filepath="$PROJECT_DIR$/commons-net-3.6/commons-net-3.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-net-3.6-sources/commons-net-3.6-sources.iml" filepath="$PROJECT_DIR$/commons-net-3.6-sources/commons-net-3.6-sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-net-examples-3.6/commons-net-examples-3.6.iml" filepath="$PROJECT_DIR$/commons-net-examples-3.6/commons-net-examples-3.6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mysql-connector-java-5.1.45-bin/mysql-connector-java-5.1.45-bin.iml" filepath="$PROJECT_DIR$/mysql-connector-java-5.1.45-bin/mysql-connector-java-5.1.45-bin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rescueAnimals.iml" filepath="$PROJECT_DIR$/rescueAnimals.iml" />
+    </modules>
+  </component>
+</project>
