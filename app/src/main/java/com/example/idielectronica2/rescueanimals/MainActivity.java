@@ -41,7 +41,7 @@ public class MainActivity extends Activity implements Response.Listener<JSONObje
     private EditText edtTextPassword;
     private TextView txtViewResult;
     private Button btnSubmitEnter;
-    private Button btnRegister;
+    private TextView btnRegister;
     ProgressDialog progress;
 
     RequestQueue request;
@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements Response.Listener<JSONObje
         this.edtTextPassword = (EditText) findViewById(R.id.edtTextPassword);
         this.txtViewResult = (TextView) findViewById(R.id.txtViewResult);
         this.btnSubmitEnter = (Button) findViewById(R.id.btnSubmitEnter);
-        this.btnRegister = (Button) findViewById(R.id.btnRegister);
+        this.btnRegister = (TextView) findViewById(R.id.btnRegister);
 
         this.request = Volley.newRequestQueue(this);
 

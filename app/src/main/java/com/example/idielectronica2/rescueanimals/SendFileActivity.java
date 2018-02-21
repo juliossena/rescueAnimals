@@ -11,6 +11,7 @@ import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Base64;
+import android.util.Log;
 import android.view.View;
 import android.webkit.MimeTypeMap;
 import android.widget.Button;
@@ -115,13 +116,12 @@ public class SendFileActivity extends AppCompatActivity{
             File auxFile = new File(uri.getPath());
             this.register.setFile(converterFileString(auxFile));
 
-            String[] split = uri.toString().split("/");
-            String nameFile = split[split.length - 1];
 
             final MimeTypeMap mime = MimeTypeMap.getSingleton();
             String extension = mime.getExtensionFromMimeType(this.getContentResolver().getType(uri));
 
-            this.txtNameFile.setText(uri.toString() + extension);
+
+            this.txtNameFile.setText(uri.getPath());
 
             this.register.setExtension(extension);
         }
@@ -129,11 +129,10 @@ public class SendFileActivity extends AppCompatActivity{
 
     private String converterFileString (File file) {
         byte[] bytesArray = new byte[(int) file.length()];
-
-
+        Toast.makeText(this, "Por favor, tome una foto" + file.length(), Toast.LENGTH_SHORT).show();
         try {
             FileInputStream fis = new FileInputStream(file);
-            fis.read(bytesArray); //read file into bytes[]
+            fis.read(bytesArray);
             fis.close();
         } catch (IOException e) {
             e.printStackTrace();
@@ -163,7 +162,8 @@ public class SendFileActivity extends AppCompatActivity{
             public void onResponse(String response) {
                 progress.hide();
 
-                Toast.makeText(getBaseContext(), "Solicitud enviada con éxito!", Toast.LENGTH_SHORT).show();
+   //             Toast.makeText(getBaseContext(), "Solicitud enviada con éxito!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getBaseContext(), register.getFile() + "aqui", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getBaseContext(), MainLoginActivity.class);
                 intent.putExtra("user", register.getUser());
 
